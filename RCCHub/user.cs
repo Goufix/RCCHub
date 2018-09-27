@@ -31,22 +31,16 @@ namespace RCCHub
         // Get full habbo's API result
         public string habboProfile(string id)
         {
+            string profileString;
             WebClient habboProfile = new WebClient();
             habboProfile.Headers.Add("user-agent", "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.2; .NET CLR 1.0.3705;)");
-            string profileString = habboProfile.DownloadString(string.Format("https://www.habbo.com/api/public/users/{0}/profile", id));
-            return profileString;
+            return profileString = habboProfile.DownloadString(string.Format("https://www.habbo.com/api/public/users/{0}/profile", id));
+
         }
         // Get company group data
         public bool isOnGroup(string profileString, string company)
         {
-            if (profileString.Contains(company))
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return profileString.Contains("[RCC] " + company);
         }
     }
 }
