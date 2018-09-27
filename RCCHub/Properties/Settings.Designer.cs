@@ -50,12 +50,12 @@ namespace RCCHub.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string Patente {
+        public string Position {
             get {
-                return ((string)(this["Patente"]));
+                return ((string)(this["Position"]));
             }
             set {
-                this["Patente"] = value;
+                this["Position"] = value;
             }
         }
     }

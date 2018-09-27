@@ -3,14 +3,14 @@
     partial class Form1
     {
         /// <summary>
-        /// Variável de designer necessária.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Limpar os recursos que estão sendo usados.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true se for necessário descartar os recursos gerenciados; caso contrário, false.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,114 +20,98 @@
             base.Dispose(disposing);
         }
 
-        #region Código gerado pelo Windows Form Designer
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Método necessário para suporte ao Designer - não modifique 
-        /// o conteúdo deste método com o editor de código.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.txtNick = new System.Windows.Forms.TextBox();
-            this.txtTAG = new System.Windows.Forms.TextBox();
-            this.txtPatente = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.Login = new System.Windows.Forms.Button();
+            this.cbPositions = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
-            // bunifuElipse1
+            // textBox1
             // 
+            this.textBox1.Location = new System.Drawing.Point(440, 170);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 0;
             // 
-            // bunifuSeparator1
+            // textBox3
             // 
+            this.textBox3.Location = new System.Drawing.Point(440, 196);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(35, 20);
+            this.textBox3.TabIndex = 2;
             // 
-            // txtNick
+            // textBox4
             // 
-            this.txtNick.Location = new System.Drawing.Point(375, 173);
-            this.txtNick.Name = "txtNick";
-            this.txtNick.Size = new System.Drawing.Size(100, 20);
-            this.txtNick.TabIndex = 2;
-            // 
-            // txtTAG
-            // 
-            this.txtTAG.Location = new System.Drawing.Point(375, 199);
-            this.txtTAG.Name = "txtTAG";
-            this.txtTAG.Size = new System.Drawing.Size(100, 20);
-            this.txtTAG.TabIndex = 3;
-            // 
-            // txtPatente
-            // 
-            this.txtPatente.Location = new System.Drawing.Point(375, 225);
-            this.txtPatente.Name = "txtPatente";
-            this.txtPatente.Size = new System.Drawing.Size(100, 20);
-            this.txtPatente.TabIndex = 4;
+            this.textBox4.Location = new System.Drawing.Point(440, 248);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 20);
+            this.textBox4.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(762, -1);
+            this.label1.Location = new System.Drawing.Point(399, 173);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(32, 33);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "X";
+            this.label1.Size = new System.Drawing.Size(32, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Nick:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(334, 176);
+            this.label2.Location = new System.Drawing.Point(399, 199);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(32, 13);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Nick:";
+            this.label2.TabIndex = 5;
+            this.label2.Text = "TAG:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(334, 202);
+            this.label3.Location = new System.Drawing.Point(373, 226);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(32, 13);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "TAG:";
+            this.label3.Size = new System.Drawing.Size(63, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Companhia:";
             // 
-            // label4
+            // cbPositions
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(327, 228);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(47, 13);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Patente:";
-            // 
-            // Login
-            // 
-            this.Login.Location = new System.Drawing.Point(386, 251);
-            this.Login.Name = "Login";
-            this.Login.Size = new System.Drawing.Size(75, 23);
-            this.Login.TabIndex = 9;
-            this.Login.Text = "Login";
-            this.Login.UseVisualStyleBackColor = true;
-            this.Login.Click += new System.EventHandler(this.Login_Click);
+            this.cbPositions.FormattingEnabled = true;
+            this.cbPositions.Items.AddRange(new object[] {
+            "Instrutores",
+            "Treinadores",
+            "Org. Rond",
+            "Escola de Formação de Executivos",
+            "Professores",
+            "Supervisores"});
+            this.cbPositions.Location = new System.Drawing.Point(440, 221);
+            this.cbPositions.Name = "cbPositions";
+            this.cbPositions.Size = new System.Drawing.Size(100, 21);
+            this.cbPositions.TabIndex = 7;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.Login);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.cbPositions);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtPatente);
-            this.Controls.Add(this.txtTAG);
-            this.Controls.Add(this.txtNick);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -136,14 +120,13 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox txtNick;
-        private System.Windows.Forms.TextBox txtTAG;
-        private System.Windows.Forms.TextBox txtPatente;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button Login;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox cbPositions;
     }
 }
-
