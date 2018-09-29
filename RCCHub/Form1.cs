@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlServerCe;
+using System.Data.SqlClient;
+using System.IO;
 
 namespace RCCHub
 {
@@ -15,6 +18,13 @@ namespace RCCHub
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        { 
+            // Função 1
+            // função 2
+            //Depois
         }
     }
 }

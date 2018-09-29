@@ -48,3 +48,12 @@ namespace RCCHub
         }
     }
 }
+
+/* Nomes dos grupos das Companhias:
+[RCC] Instrutores
+[RCC] Escola de Formação Exe.
+[RCC] Professores
+[RCC] Org. de Ronda
+[RCC] Treinadores
+[RCC] Supervisores
+  */

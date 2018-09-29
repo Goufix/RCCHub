@@ -4,6 +4,8 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.SqlClient;
+using System.Data.SqlServerCe;
 
 namespace RCCHub
 {
@@ -41,6 +43,10 @@ namespace RCCHub
         public bool isOnGroup(string profileString, string company)
         {
             return profileString.Contains("[RCC] " + company);
+        }
+        public void db()
+        {
+            SqlConnection sc = new SqlConnection("Data source=");
         }
     }
 }
